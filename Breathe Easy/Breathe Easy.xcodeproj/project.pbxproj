@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */; };
+		3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */; };
+		347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A029E1DCF3007DDE7F /* CustomColors.swift */; };
+		347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */; };
+		347433A529E1E1C8007DDE7F /* PollenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A429E1E1C8007DDE7F /* PollenModel.swift */; };
 		34EB686429E1D31A00D364BE /* Breathe_EasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */; };
-		34EB686629E1D31A00D364BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB686529E1D31A00D364BE /* ContentView.swift */; };
+		34EB686629E1D31A00D364BE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB686529E1D31A00D364BE /* MainTabView.swift */; };
 		34EB686829E1D31B00D364BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EB686729E1D31B00D364BE /* Assets.xcassets */; };
 		34EB686B29E1D31B00D364BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EB686A29E1D31B00D364BE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyDecisionView.swift; sourceTree = "<group>"; };
+		3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyViewModel.swift; sourceTree = "<group>"; };
+		347433A029E1DCF3007DDE7F /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyPollenService.swift; sourceTree = "<group>"; };
+		347433A429E1E1C8007DDE7F /* PollenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollenModel.swift; sourceTree = "<group>"; };
 		34EB686029E1D31A00D364BE /* Breathe Easy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breathe Easy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breathe_EasyApp.swift; sourceTree = "<group>"; };
-		34EB686529E1D31A00D364BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34EB686529E1D31A00D364BE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		34EB686729E1D31B00D364BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34EB686A29E1D31B00D364BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +42,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3474339B29E1D659007DDE7F /* Breathe Easy Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */,
+				3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */,
+				347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */,
+				347433A429E1E1C8007DDE7F /* PollenModel.swift */,
+			);
+			path = "Breathe Easy Screen";
+			sourceTree = "<group>";
+		};
 		34EB685729E1D31A00D364BE = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +72,12 @@
 		34EB686229E1D31A00D364BE /* Breathe Easy */ = {
 			isa = PBXGroup;
 			children = (
+				34EB686529E1D31A00D364BE /* MainTabView.swift */,
+				3474339B29E1D659007DDE7F /* Breathe Easy Screen */,
 				34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */,
-				34EB686529E1D31A00D364BE /* ContentView.swift */,
 				34EB686729E1D31B00D364BE /* Assets.xcassets */,
 				34EB686929E1D31B00D364BE /* Preview Content */,
+				347433A029E1DCF3007DDE7F /* CustomColors.swift */,
 			);
 			path = "Breathe Easy";
 			sourceTree = "<group>";
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34EB686629E1D31A00D364BE /* ContentView.swift in Sources */,
+				3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */,
+				347433A529E1E1C8007DDE7F /* PollenModel.swift in Sources */,
+				347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */,
+				3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */,
+				347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */,
+				34EB686629E1D31A00D364BE /* MainTabView.swift in Sources */,
 				34EB686429E1D31A00D364BE /* Breathe_EasyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +298,13 @@
 				DEVELOPMENT_TEAM = 6C894L8XAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This Applicaiton needs to use your location to properly function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +329,13 @@
 				DEVELOPMENT_TEAM = 6C894L8XAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This Applicaiton needs to use your location to properly function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
