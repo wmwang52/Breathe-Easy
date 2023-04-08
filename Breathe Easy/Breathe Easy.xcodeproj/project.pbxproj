@@ -49,6 +49,7 @@
 				3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */,
 				347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */,
 				347433A429E1E1C8007DDE7F /* PollenModel.swift */,
+				34EB686929E1D31B00D364BE /* Preview Content */,
 			);
 			path = "Breathe Easy Screen";
 			sourceTree = "<group>";
@@ -72,11 +73,10 @@
 		34EB686229E1D31A00D364BE /* Breathe Easy */ = {
 			isa = PBXGroup;
 			children = (
+				34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */,
 				34EB686529E1D31A00D364BE /* MainTabView.swift */,
 				3474339B29E1D659007DDE7F /* Breathe Easy Screen */,
-				34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */,
 				34EB686729E1D31B00D364BE /* Assets.xcassets */,
-				34EB686929E1D31B00D364BE /* Preview Content */,
 				347433A029E1DCF3007DDE7F /* CustomColors.swift */,
 			);
 			path = "Breathe Easy";
@@ -294,7 +294,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Breathe Easy/Preview Content\"";
 				DEVELOPMENT_TEAM = 6C894L8XAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +324,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Breathe Easy/Preview Content\"";
 				DEVELOPMENT_TEAM = 6C894L8XAD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

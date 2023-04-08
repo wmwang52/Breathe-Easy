@@ -15,7 +15,27 @@ class BreatheEasyViewModel: ObservableObject {
     
     @Published var long: Double = -79.0558
     
-    @Published var pollenData: Pollen = .init(message: "", lat: 0, lng: 0, data: [])
+    @Published var pollenData: Pollen = Pollen(
+        message: "success",
+        lat: 35.9132,
+        lng: -79.0558,
+        data: [
+            PollenData(
+                count: PollenCount(grassPollen: 0, treePollen: 841, weedPollen: 0),
+                risk: PollenRisk(grassPollen: "Low", treePollen: "Very High", weedPollen: "Low"),
+                species: Species(
+                    Grass: ["Grass / Poaceae": 0],
+                    Others: 21,
+                    Tree: ["Ash": 50, "Birch": 50, "Cypress / Juniper / Cedar": 201, "Elm": 58, "Maple": 50, "Mulberry": 84, "Oak": 252, "Pine": 42, "Poplar / Cottonwood": 33],
+                    Weed: ["Ragweed": 0]
+                ),
+                updatedAt: "2023-04-08T19:30:12.000Z"
+            )
+        ]
+    )
+
+    
+    @Published var mood = ""
     
     func pollenRequest() {
         Task {
@@ -27,4 +47,10 @@ class BreatheEasyViewModel: ObservableObject {
             }
         }
     }
+    
+    
+    
+    
+    
+    
 }

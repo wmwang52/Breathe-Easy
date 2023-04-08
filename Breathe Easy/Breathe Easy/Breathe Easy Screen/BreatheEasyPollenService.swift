@@ -13,7 +13,6 @@ struct BreatheEasyPollenService {
     private let decoder = JSONDecoder()
 
     public func fetchPollen(lat: Double, long: Double) async throws -> Pollen {
-        print("HELLO")
         var components = URLComponents(string: "https://api.ambeedata.com/latest/pollen/by-lat-lng?")
 
         components?.queryItems = [
@@ -26,14 +25,12 @@ struct BreatheEasyPollenService {
         }
 
         var request = URLRequest(url: url)
-        request.addValue("", forHTTPHeaderField: "x-api-key")
+        request.addValue("3b4f09107bbbef63657c324d6137290404e1c662c8bc3be701fad911aa3ab797", forHTTPHeaderField: "x-api-key")
         request.addValue("application/json", forHTTPHeaderField: "Content-type")
 
         let (data, _) = try await session.data(for: request)
-        print(data)
 
         let pollenData = try decoder.decode(Pollen.self, from: data)
-        print(pollenData)
 
         return pollenData
     }
