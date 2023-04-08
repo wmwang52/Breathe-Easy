@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BreatheEasyDecisionView: View {
-    @StateObject var vm = BreatheEasyViewModel()
+    @StateObject var vm:BreatheEasyViewModel
     var body: some View {
         VStack {
             TopView(vm: vm)
@@ -19,7 +19,7 @@ struct BreatheEasyDecisionView: View {
 
 struct BreatheEasyDecisionViewPreviews: PreviewProvider {
     static var previews: some View {
-        BreatheEasyDecisionView()
+        BreatheEasyDecisionView(vm:BreatheEasyViewModel())
     }
 }
 

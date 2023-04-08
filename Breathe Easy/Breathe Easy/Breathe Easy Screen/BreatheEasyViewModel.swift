@@ -11,8 +11,10 @@ import Foundation
 class BreatheEasyViewModel: ObservableObject {
     private let service = BreatheEasyPollenService()
     
-    @Published var lat: Double = 35.9132
+    @Published var dailyProfileInformation:DailyInformation = DailyInformation(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
     
+    @Published var lat: Double = 35.9132
+
     @Published var long: Double = -79.0558
     
     @Published var pollenData: Pollen = Pollen(

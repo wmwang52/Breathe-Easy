@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3412F6EA29E205F7009BEEFC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6E929E205F7009BEEFC /* ProfileView.swift */; };
+		3412F6EC29E2060F009BEEFC /* ProfileInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */; };
 		3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */; };
 		3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */; };
 		347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A029E1DCF3007DDE7F /* CustomColors.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3412F6E929E205F7009BEEFC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationModel.swift; sourceTree = "<group>"; };
 		3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyDecisionView.swift; sourceTree = "<group>"; };
 		3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyViewModel.swift; sourceTree = "<group>"; };
 		347433A029E1DCF3007DDE7F /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3412F6E829E205E8009BEEFC /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3412F6E929E205F7009BEEFC /* ProfileView.swift */,
+				3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */,
+			);
+			path = "Profile Screen";
+			sourceTree = "<group>";
+		};
 		3474339B29E1D659007DDE7F /* Breathe Easy Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 			children = (
 				34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */,
 				34EB686529E1D31A00D364BE /* MainTabView.swift */,
+				3412F6E829E205E8009BEEFC /* Profile Screen */,
 				3474339B29E1D659007DDE7F /* Breathe Easy Screen */,
 				34EB686729E1D31B00D364BE /* Assets.xcassets */,
 				347433A029E1DCF3007DDE7F /* CustomColors.swift */,
@@ -160,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3412F6EA29E205F7009BEEFC /* ProfileView.swift in Sources */,
 				3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */,
 				347433A529E1E1C8007DDE7F /* PollenModel.swift in Sources */,
+				3412F6EC29E2060F009BEEFC /* ProfileInformationModel.swift in Sources */,
 				347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */,
 				3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */,
 				347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */,

@@ -12,14 +12,16 @@ struct MainTabView: View {
     init() {
         UITabBar.appearance().scrollEdgeAppearance = appearance
     }
+    @StateObject var vm = BreatheEasyViewModel()
+
     var body: some View {
         TabView {
-            BreatheEasyDecisionView()
+            BreatheEasyDecisionView(vm:vm)
                 .tabItem {
                     Label("Breathe easy", systemImage: "cloud.sun")
                     
                 }
-            Text("HEllo")
+            ProfileView(vm: vm)
                 .tabItem {
                     Label("Profile", systemImage: "face.smiling")
                 }
