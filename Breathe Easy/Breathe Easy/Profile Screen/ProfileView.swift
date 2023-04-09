@@ -42,17 +42,20 @@ struct ProfileView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        if !vm.emptyDict.keys.contains(date) {
-                            vm.emptyDict[date] = vm.dailyProfileInformation
-                            vm.dailyProfileInformation = DailyInformation(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
-                        } else{
+                        if !vm.analyticalDictInformation.keys.contains(date) {
+                            vm.dailyProfileInformation.date = date
+
+                            vm.analyticalDictInformation[date] = vm.dailyProfileInformation
+
+                            vm.dailyProfileInformation = DailyInformation(pollenScale: 0, pollen: "", date: date, pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
+
+                        } else {
                             print("Already in there")
                         }
 
                     } label: {
-                        
                         Text("Save")
-                            .foregroundColor(!vm.emptyDict.keys.contains(date) ? Color.blue : Color.gray)
+                            .foregroundColor(!vm.analyticalDictInformation.keys.contains(date) ? Color.blue : Color.gray)
                     }
                 }
             }

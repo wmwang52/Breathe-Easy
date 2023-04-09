@@ -12,6 +12,8 @@ struct DailyInformation:Codable, Hashable, Identifiable{
     var pollenScale:Double
     var pollen:String
     
+    var date:Date
+    
     var pollution:String
     var pollutionScale:Double
     

@@ -89,10 +89,9 @@
 		3474339B29E1D659007DDE7F /* Breathe Easy Screen */ = {
 			isa = PBXGroup;
 			children = (
-				3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */,
 				3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */,
 				3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */,
-				34EB686929E1D31B00D364BE /* Preview Content */,
+				3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */,
 			);
 			path = "Breathe Easy Screen";
 			sourceTree = "<group>";
@@ -101,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				34EB686229E1D31A00D364BE /* Breathe Easy */,
+				3412F6F629E25BB0009BEEFC /* AmbeeApi's */,
+				34EB686929E1D31B00D364BE /* Preview Content */,
 				34EB686129E1D31A00D364BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,9 +121,7 @@
 				34EB686529E1D31A00D364BE /* MainTabView.swift */,
 				3412F6F129E25781009BEEFC /* Analytical Screen */,
 				3412F6E829E205E8009BEEFC /* Profile Screen */,
-				3412F6F629E25BB0009BEEFC /* AmbeeApi's */,
 				3474339B29E1D659007DDE7F /* Breathe Easy Screen */,
-				34EB686729E1D31B00D364BE /* Assets.xcassets */,
 				347433A029E1DCF3007DDE7F /* CustomColors.swift */,
 				3412F6FD29E265FB009BEEFC /* LocationManager.swift */,
 				3412F6FF29E26648009BEEFC /* Location.swift */,
@@ -133,6 +132,7 @@
 		34EB686929E1D31B00D364BE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				34EB686729E1D31B00D364BE /* Assets.xcassets */,
 				34EB686A29E1D31B00D364BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

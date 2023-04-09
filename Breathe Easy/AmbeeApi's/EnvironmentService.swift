@@ -31,7 +31,6 @@ struct EnvironmentService {
         let (data, _) = try await session.data(for: request)
 
         let pollenData = try decoder.decode(Pollen.self, from: data)
-        print(pollenData)
 
         return pollenData
     }

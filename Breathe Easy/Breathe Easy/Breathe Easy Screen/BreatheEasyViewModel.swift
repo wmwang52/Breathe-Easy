@@ -20,10 +20,13 @@ class BreatheEasyViewModel: ObservableObject {
         locationManager.requestLocation()
     }
 
-    var emptyDict: [Date: DailyInformation] = [:]
+    var analyticalDictInformation: [Date: DailyInformation] = [Date(): DailyInformation(pollenScale: 5.0, pollen: "", date: Date(), pollution: "", pollutionScale: 6.0, weather: "", weatherScale: 4.0, overall: "", overallScale: 0.0)]
+    
+    
+    
     @Published var city: String = ""
 
-    @Published var dailyProfileInformation: DailyInformation = .init(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
+    @Published var dailyProfileInformation: DailyInformation = .init(pollenScale: 0, pollen: "", date: Date(), pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
 
     @Published var lat: Double = 35.9132
 
@@ -74,26 +77,6 @@ class BreatheEasyViewModel: ObservableObject {
             )
         ]
     )
-
-    @Published var mood = ""
-
-//    func requestAllServices() {
-//        Task {
-//            do {
-//                let pollen = try await service.fetchPollen(lat: lat, long: long)
-//                self.pollenData = pollen
-//
-//                let pollution = try await service.fetchPollution(lat: lat, long: long)
-//                self.pollutionData = pollution
-//
-//                let weatherData = try await service.fetchWeather(lat: lat, long: long)
-//                self.weatherData = weatherData
-//
-//            } catch {
-//                print(String(describing: error))
-//            }
-//        }
-//    }
 }
 
 extension BreatheEasyViewModel: LocationManagerDelegate {
@@ -140,4 +123,10 @@ extension BreatheEasyViewModel: LocationManagerDelegate {
 
         })
     }
+
+
 }
+
+
+
+
