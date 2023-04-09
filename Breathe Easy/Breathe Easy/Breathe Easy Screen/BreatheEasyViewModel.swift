@@ -11,13 +11,16 @@ import Foundation
 class BreatheEasyViewModel: ObservableObject {
     private let service = BreatheEasyPollenService()
     
-    @Published var dailyProfileInformation:DailyInformation = DailyInformation(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
+    var emptyDict: [Date: DailyInformation] = [:]
+
+    
+    @Published var dailyProfileInformation: DailyInformation = .init(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
     
     @Published var lat: Double = 35.9132
 
     @Published var long: Double = -79.0558
     
-    @Published var pollenData: Pollen = Pollen(
+    @Published var pollenData: Pollen = .init(
         message: "success",
         lat: 35.9132,
         lng: -79.0558,
@@ -36,7 +39,6 @@ class BreatheEasyViewModel: ObservableObject {
         ]
     )
 
-    
     @Published var mood = ""
     
     func pollenRequest() {
@@ -49,10 +51,5 @@ class BreatheEasyViewModel: ObservableObject {
             }
         }
     }
-    
-    
-    
-    
-    
-    
+
 }

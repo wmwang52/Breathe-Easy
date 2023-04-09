@@ -9,10 +9,26 @@ import SwiftUI
 
 struct ProfileView: View {
     @StateObject var vm: BreatheEasyViewModel
+    @State private var date = Date()
+    let dateRange: ClosedRange<Date> = {
+        let calendar = Calendar.current
+        let startComponents = DateComponents(year: 2023, month: 1, day: 1)
+        let endComponents = DateComponents(year: 2023, month: 12, day: 31, hour: 23, minute: 59, second: 59)
+        return calendar.date(from: startComponents)!
+            ...
+            calendar.date(from: endComponents)!
+    }()
 
     var body: some View {
         NavigationStack {
             List {
+                DatePicker(
+                    "Start Date",
+                    selection: $date,
+                    in: dateRange,
+                    displayedComponents: [.date]
+                )
+
                 PollenView(vm: vm)
 
                 PollutionView(vm: vm)
@@ -23,6 +39,23 @@ struct ProfileView: View {
             }
 
             .navigationTitle("How do you feel today?")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
+                        if !vm.emptyDict.keys.contains(date) {
+                            vm.emptyDict[date] = vm.dailyProfileInformation
+                            vm.dailyProfileInformation = DailyInformation(pollenScale: 0, pollen: "", pollution: "", pollutionScale: 0, weather: "", weatherScale: 0, overall: "", overallScale: 0)
+                        } else{
+                            print("Already in there")
+                        }
+
+                    } label: {
+                        
+                        Text("Save")
+                            .foregroundColor(!vm.emptyDict.keys.contains(date) ? Color.blue : Color.gray)
+                    }
+                }
+            }
         }
     }
 }

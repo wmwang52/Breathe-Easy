@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3412F6EA29E205F7009BEEFC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6E929E205F7009BEEFC /* ProfileView.swift */; };
 		3412F6EC29E2060F009BEEFC /* ProfileInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */; };
+		3412F6F029E24D75009BEEFC /* WeatherElementRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */; };
 		3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */; };
 		3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */; };
 		347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A029E1DCF3007DDE7F /* CustomColors.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		3412F6E929E205F7009BEEFC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationModel.swift; sourceTree = "<group>"; };
+		3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherElementRowItemView.swift; sourceTree = "<group>"; };
 		3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyDecisionView.swift; sourceTree = "<group>"; };
 		3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyViewModel.swift; sourceTree = "<group>"; };
 		347433A029E1DCF3007DDE7F /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */,
+				3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */,
 				3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */,
 				347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */,
 				347433A429E1E1C8007DDE7F /* PollenModel.swift */,
@@ -182,6 +185,7 @@
 				3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */,
 				347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */,
 				34EB686629E1D31A00D364BE /* MainTabView.swift in Sources */,
+				3412F6F029E24D75009BEEFC /* WeatherElementRowItemView.swift in Sources */,
 				34EB686429E1D31A00D364BE /* Breathe_EasyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BreatheEasyDecisionView: View {
-    @StateObject var vm:BreatheEasyViewModel
+    @StateObject var vm: BreatheEasyViewModel
     var body: some View {
         VStack {
             TopView(vm: vm)
@@ -19,7 +19,7 @@ struct BreatheEasyDecisionView: View {
 
 struct BreatheEasyDecisionViewPreviews: PreviewProvider {
     static var previews: some View {
-        BreatheEasyDecisionView(vm:BreatheEasyViewModel())
+        BreatheEasyDecisionView(vm: BreatheEasyViewModel())
     }
 }
 
@@ -37,20 +37,29 @@ struct TopView: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.white)
                     .bold()
-                Spacer()
+                
+                HStack {
+                    Image(systemName: "cloud.sun.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100, height: 100)
+                        .symbolRenderingMode(.multicolor)
+                        .padding(.vertical, 80)
+                        .shadow(radius: 25)
+                    Spacer()
+                    Text("70 Degrees")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .bold()
+                }
+                .padding(.horizontal, 30)
                 
                 Text("Today, you should open your windows!")
                     .font(.largeTitle)
                     .foregroundColor(Color.white)
                     .bold()
                     .fixedSize(horizontal: false, vertical: true)
-                
-                Image(systemName: "cloud.sun.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 100, height: 100)
-                    .symbolRenderingMode(.multicolor)
-                    .padding(.vertical, 80)
+                    .padding(.bottom, 20)
                 
                 Spacer()
             }
@@ -70,23 +79,31 @@ struct BottomView: View {
             Color(hex: "#1475f5")
             
             ScrollView {
+                
+                    
                 VStack(alignment: .leading) {
-                    Text("Grass Pollen Risk: \(vm.pollenData.data[0].risk.grassPollen)")
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("Focused review")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .bold()
+                    
+                    WeatherElementRowItemView(label: "Grass Pollen Risk", icon: "Grass", data: vm.pollenData.data[0].risk.grassPollen, symbol: false)
                         .padding(.vertical)
-                            
-                    Text("Tree Pollen Risk: \(vm.pollenData.data[0].risk.treePollen)")
+                        
+                    WeatherElementRowItemView(label: "Tree Pollen Risk", icon: "tree.fill", data: vm.pollenData.data[0].risk.treePollen, symbol: true)
                         .padding(.vertical)
-
-                    Text("Weed Pollen Risk: \(vm.pollenData.data[0].risk.weedPollen)")
+                        
+                    WeatherElementRowItemView(label: "Weed Pollen Risk", icon: "leaf", data: vm.pollenData.data[0].risk.weedPollen, symbol: true)
                         .padding(.vertical)
-
+                        
                 }.font(.title2)
                     .foregroundColor(.white)
                     .fontDesign(.default)
                     .padding(.horizontal)
             }
+            .navigationTitle("Today's weather")
         }
         .ignoresSafeArea()
+
     }
 }
