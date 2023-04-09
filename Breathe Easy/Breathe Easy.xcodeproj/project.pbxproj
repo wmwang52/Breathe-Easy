@@ -10,10 +10,15 @@
 		3412F6EA29E205F7009BEEFC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6E929E205F7009BEEFC /* ProfileView.swift */; };
 		3412F6EC29E2060F009BEEFC /* ProfileInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */; };
 		3412F6F029E24D75009BEEFC /* WeatherElementRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */; };
+		3412F6F529E2579F009BEEFC /* AnalyticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6F429E2579F009BEEFC /* AnalyticalView.swift */; };
+		3412F6FA29E25BF2009BEEFC /* PollutionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6F929E25BF2009BEEFC /* PollutionModel.swift */; };
+		3412F6FC29E2611C009BEEFC /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6FB29E2611C009BEEFC /* WeatherModel.swift */; };
+		3412F6FE29E265FB009BEEFC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6FD29E265FB009BEEFC /* LocationManager.swift */; };
+		3412F70029E26648009BEEFC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412F6FF29E26648009BEEFC /* Location.swift */; };
 		3474339D29E1D67C007DDE7F /* BreatheEasyDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */; };
 		3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */; };
 		347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A029E1DCF3007DDE7F /* CustomColors.swift */; };
-		347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */; };
+		347433A329E1E166007DDE7F /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A229E1E166007DDE7F /* EnvironmentService.swift */; };
 		347433A529E1E1C8007DDE7F /* PollenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347433A429E1E1C8007DDE7F /* PollenModel.swift */; };
 		34EB686429E1D31A00D364BE /* Breathe_EasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */; };
 		34EB686629E1D31A00D364BE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB686529E1D31A00D364BE /* MainTabView.swift */; };
@@ -25,10 +30,15 @@
 		3412F6E929E205F7009BEEFC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3412F6EB29E2060F009BEEFC /* ProfileInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationModel.swift; sourceTree = "<group>"; };
 		3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherElementRowItemView.swift; sourceTree = "<group>"; };
+		3412F6F429E2579F009BEEFC /* AnalyticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticalView.swift; sourceTree = "<group>"; };
+		3412F6F929E25BF2009BEEFC /* PollutionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionModel.swift; sourceTree = "<group>"; };
+		3412F6FB29E2611C009BEEFC /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		3412F6FD29E265FB009BEEFC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3412F6FF29E26648009BEEFC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyDecisionView.swift; sourceTree = "<group>"; };
 		3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyViewModel.swift; sourceTree = "<group>"; };
 		347433A029E1DCF3007DDE7F /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
-		347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheEasyPollenService.swift; sourceTree = "<group>"; };
+		347433A229E1E166007DDE7F /* EnvironmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.swift; sourceTree = "<group>"; };
 		347433A429E1E1C8007DDE7F /* PollenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollenModel.swift; sourceTree = "<group>"; };
 		34EB686029E1D31A00D364BE /* Breathe Easy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breathe Easy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breathe_EasyApp.swift; sourceTree = "<group>"; };
@@ -57,14 +67,31 @@
 			path = "Profile Screen";
 			sourceTree = "<group>";
 		};
+		3412F6F129E25781009BEEFC /* Analytical Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3412F6F429E2579F009BEEFC /* AnalyticalView.swift */,
+			);
+			path = "Analytical Screen";
+			sourceTree = "<group>";
+		};
+		3412F6F629E25BB0009BEEFC /* AmbeeApi's */ = {
+			isa = PBXGroup;
+			children = (
+				347433A429E1E1C8007DDE7F /* PollenModel.swift */,
+				3412F6F929E25BF2009BEEFC /* PollutionModel.swift */,
+				347433A229E1E166007DDE7F /* EnvironmentService.swift */,
+				3412F6FB29E2611C009BEEFC /* WeatherModel.swift */,
+			);
+			path = "AmbeeApi's";
+			sourceTree = "<group>";
+		};
 		3474339B29E1D659007DDE7F /* Breathe Easy Screen */ = {
 			isa = PBXGroup;
 			children = (
 				3474339C29E1D67C007DDE7F /* BreatheEasyDecisionView.swift */,
-				3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */,
 				3474339E29E1D685007DDE7F /* BreatheEasyViewModel.swift */,
-				347433A229E1E166007DDE7F /* BreatheEasyPollenService.swift */,
-				347433A429E1E1C8007DDE7F /* PollenModel.swift */,
+				3412F6EF29E24D75009BEEFC /* WeatherElementRowItemView.swift */,
 				34EB686929E1D31B00D364BE /* Preview Content */,
 			);
 			path = "Breathe Easy Screen";
@@ -91,10 +118,14 @@
 			children = (
 				34EB686329E1D31A00D364BE /* Breathe_EasyApp.swift */,
 				34EB686529E1D31A00D364BE /* MainTabView.swift */,
+				3412F6F129E25781009BEEFC /* Analytical Screen */,
 				3412F6E829E205E8009BEEFC /* Profile Screen */,
+				3412F6F629E25BB0009BEEFC /* AmbeeApi's */,
 				3474339B29E1D659007DDE7F /* Breathe Easy Screen */,
 				34EB686729E1D31B00D364BE /* Assets.xcassets */,
 				347433A029E1DCF3007DDE7F /* CustomColors.swift */,
+				3412F6FD29E265FB009BEEFC /* LocationManager.swift */,
+				3412F6FF29E26648009BEEFC /* Location.swift */,
 			);
 			path = "Breathe Easy";
 			sourceTree = "<group>";
@@ -182,9 +213,14 @@
 				347433A529E1E1C8007DDE7F /* PollenModel.swift in Sources */,
 				3412F6EC29E2060F009BEEFC /* ProfileInformationModel.swift in Sources */,
 				347433A129E1DCF3007DDE7F /* CustomColors.swift in Sources */,
+				3412F6FC29E2611C009BEEFC /* WeatherModel.swift in Sources */,
 				3474339F29E1D685007DDE7F /* BreatheEasyViewModel.swift in Sources */,
-				347433A329E1E166007DDE7F /* BreatheEasyPollenService.swift in Sources */,
+				3412F70029E26648009BEEFC /* Location.swift in Sources */,
+				3412F6F529E2579F009BEEFC /* AnalyticalView.swift in Sources */,
+				347433A329E1E166007DDE7F /* EnvironmentService.swift in Sources */,
 				34EB686629E1D31A00D364BE /* MainTabView.swift in Sources */,
+				3412F6FE29E265FB009BEEFC /* LocationManager.swift in Sources */,
+				3412F6FA29E25BF2009BEEFC /* PollutionModel.swift in Sources */,
 				3412F6F029E24D75009BEEFC /* WeatherElementRowItemView.swift in Sources */,
 				34EB686429E1D31A00D364BE /* Breathe_EasyApp.swift in Sources */,
 			);
@@ -323,7 +359,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,7 +389,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

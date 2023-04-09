@@ -27,17 +27,16 @@ struct WeatherElementRowItemView: View {
                             .scaledToFit()
                             .frame(width: 35, height: 35)
                     }
-                    
+
                     Text(" \(label): \(data)")
                 }.font(.title)
-                
+
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(10)
             }
-            
+
         }.cornerRadius(15)
             .shadow(radius: 54)
-
     }
 }
 
