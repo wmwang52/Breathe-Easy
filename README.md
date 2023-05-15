@@ -4,14 +4,14 @@
 
 ## Background
 
-- This project was an entry for Hack NC State, the double data tract. The application was made for students like me to see all the pollutants in the air at a glance, so I can quickly determine whether I should open my windows! It offers three prominent features, with the ability to track their happiness, allergic reaction to pollen, and perception of air quality. The entirety of the application was made using Swift, URLSession, CoreLocation, and SwiftUI. 
+- Breathe-Easy was created for Hack NC State's double data track competition to give students an easy way to determine their area's air quality and pollutant levels. The app offers three main features - tracking of happiness, allergic reactions to pollen, and perception of air quality - and was built using Swift, URLSession, CoreLocation, and SwiftUI.
+
 
 ## Description
-- Breathe Easy is a tool that gathers data from multiple APIs and computes whether it's safe for you to open your windows and breathe comfortably. Additionally, it features a tracking function that helps you identify if you have a higher sensitivity to particular types of pollen or air pollutants. The tool also correlates this information with your general well-being to identify any patterns for users.
+
+- Breathe-Easy is a powerful tool that utilizes multiple APIs to provide up-to-date information about air quality and pollutant levels. This information lets you quickly determine whether opening your windows and breathing is safe. Additionally, the app features a tracking function that helps you identify patterns or trends in your sensitivity to particular pollen or air pollutants. By correlating this data with your overall well-being, Breathe-Easy offers valuable insights into how air quality can impact your health.
+
 
 ## How to run
 
-- The best way to run this app is to clone the GitHub repo onto your Apple computer and open the workspace in XCODE!
-
-
-
+- To use Breathe-Easy, clone the GitHub repo onto your Apple computer and open the workspace in XCODE.
