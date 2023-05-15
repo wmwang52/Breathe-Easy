@@ -1,5 +1,7 @@
 # Breathe-Easy
 
+![Breathe](https://github.com/wmwang52/Breathe-Easy/assets/38409263/668a331e-3fd5-4b32-bc93-614cae9a80d4)
+
 ## Background
 
 - This project was an entry for Hack NC State, the double data tract. The application was made for students like me to see all the pollutants in the air at a glance, so I can quickly determine whether I should open my windows! It offers three prominent features, with the ability to track their happiness, allergic reaction to pollen, and perception of air quality. The entirety of the application was made using Swift, URLSession, CoreLocation, and SwiftUI. 
@@ -10,5 +12,6 @@
 ## How to run
 
 - The best way to run this app is to clone the GitHub repo onto your Apple computer and open the workspace in XCODE!
+
 
 
